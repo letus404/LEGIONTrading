@@ -1,0 +1,2 @@
+# LEGIONTrading
+Academia de Trading
