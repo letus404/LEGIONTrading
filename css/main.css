@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Contenido principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Secciones individuales */
+section {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0088cc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #006699;
+}
+/* Imágenes */
+#que-es-trading {
+    background-image: url(./img/trading-2.jpg); 
+    background-size: cover;
+}
+
+#estrategias {
+    background-image: url('./img/trading-3.jpg');
+    background-size: cover;
+}
+
+#plataformas {
+    background-image: url('./img/deriv.jpg'); 
+    background-size: cover;
+}
+
+
+/* Media Query para Tablets (768px de ancho) */
+@media (max-width: 768px) {
+    main {
+        display: block; /* Las secciones se apilan una encima de la otra */
+    }
+}
+/* Media Query para Dispositivos Móviles (480px de ancho) */
+@media (max-width: 480px) {
+    /* Ajustes de estilo para dispositivos móviles */
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente para una mejor legibilidad en dispositivos pequeños */
+    }
+    main {
+        padding: 10px; /* Ajusta el espacio interior para dispositivos móviles */
+    }
+    section {
+        padding: 15px; /* Ajusta el espacio interior de las secciones */
+    }
+}
